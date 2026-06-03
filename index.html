@@ -6,28 +6,25 @@
       <title>Animatie – INOVA</title>
     <style>
           * { margin: 0; padding: 0; box-sizing: border-box; }
-          body { background: #000; }
-          .wrap {
-                  overflow: hidden;
-                  width: 100%;
-          }
+          body { background: #000; overflow: hidden; }
           iframe {
                   display: block;
-                  width: calc(100% + 18px);
-                  height: 4000px;
+                  width: 100vw;
+                  height: 100vh;
                   border: none;
           }
+          /* Verberg scrollbar maar scrollen werkt nog */
+          ::-webkit-scrollbar { display: none; }
+          * { scrollbar-width: none; }
         </style>
   </head>
   <body>
-      <div class="wrap">
-            <iframe
-                    src="https://vimeo.com/showcase/6751579/embed2"
-                    allowfullscreen
-                    allow="autoplay; fullscreen; picture-in-picture"
-                    sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms allow-popups allow-popups-to-escape-sandbox">
-            </iframe>iframe>
-      </div>div>
+      <iframe
+            src="https://vimeo.com/showcase/6751579/embed2"
+            allowfullscreen
+            allow="autoplay; fullscreen; picture-in-picture"
+            sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms allow-popups allow-popups-to-escape-sandbox">
+      </iframe>iframe>
   </body>
 </html>html>
   </body>
